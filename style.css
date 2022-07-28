@@ -1,0 +1,48 @@
+*{
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+.card{
+    width: 75%;
+    /* height: 32rem; */
+    border: 1px solid lightslategrey;
+    text-align: center;
+    background: lightseagreen;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.pokeImg{
+    width: 80%;
+    height: 60%;
+    background: linear-gradient(295deg, rgba(2,0,36,1) 0%, rgba(62,7,104,1) 28%, rgba(9,117,121,0.835171568627451) 54%, rgba(0,212,255,1) 100%);
+    border-radius: 60% 120% 20% 20%;
+    transition: 1s linear;
+}
+.card:hover .pokeImg{
+    border-radius: 120% 70% 50% 90%;
+    transform: rotate(7deg);
+}
+.pokeName{
+    color: lemonchiffon;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+#pokedex{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1%;
+}
+.pokeHeading{
+    margin: 20px auto;
+    padding: 15px 0;
+}
